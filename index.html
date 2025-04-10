@@ -1,0 +1,1009 @@
+<form class="charsheet">
+  <header>
+    <section class="charname">
+      <label for="charname">Character Name</label><input name="charname" placeholder="Thoradin Fireforge" />
+    </section>
+    <section class="misc">
+      <ul>
+        <li>
+          <label for="classlevel">Class & Level</label><input name="classlevel" placeholder="Paladin 2" />
+        </li>
+        <li>
+          <label for="background">Background</label><input name="background" placeholder="Acolyte" />
+        </li>
+        <li>
+          <label for="playername">Player Name</label><input name="playername" placeholder="Player McPlayerface">
+        </li>
+        <li>
+          <label for="race">Race</label><input name="race" placeholder="Half-elf" />
+        </li>
+        <li>
+          <label for="alignment">Alignment</label><input name="alignment" placeholder="Lawful Good" />
+        </li>
+        <li>
+          <label for="experiencepoints">Experience Points</label><input name="experiencepoints" placeholder="3240" />
+        </li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <section>
+      <section class="attributes">
+        <div class="scores">
+          <ul>
+            <li>
+              <div class="score">
+                <label for="Strengthscore">Strength</label><input name="Strengthscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Strengthmod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Dexterityscore">Dexterity</label><input name="Dexterityscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Dexteritymod" placeholder="+0" class=statmod/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Constitutionscore">Constitution</label><input name="Constitutionscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Constitutionmod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Wisdomscore">Wisdom</label><input name="Wisdomscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Wisdommod" placeholder="+0" />
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Intelligencescore">Intelligence</label><input name="Intelligencescore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Intelligencemod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Charismascore">Charisma</label><input name="Charismascore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Charismamod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="attr-applications">
+          <div class="inspiration box">
+            <div class="label-container">
+              <label for="inspiration">Inspiration</label>
+            </div>
+            <input name="inspiration" type="checkbox" />
+          </div>
+          <div class="proficiencybonus box">
+            <div class="label-container">
+              <label for="proficiencybonus">Proficiency Bonus</label>
+            </div>
+            <input name="proficiencybonus" placeholder="+2" />
+          </div>
+          <div class="saves list-section box">
+            <ul>
+              <li>
+                <label for="Strength-save">Strength</label><input name="Strength-save" placeholder="+0" type="text" /><input name="Strength-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Dexterity-save">Dexterity</label><input name="Dexterity-save" placeholder="+0" type="text" /><input name="Dexterity-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Constitution-save">Constitution</label><input name="Constitution-save" placeholder="+0" type="text" /><input name="Constitution-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Wisdom-save">Wisdom</label><input name="Wisdom-save" placeholder="+0" type="text" /><input name="Wisdom-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Intelligence-save">Intelligence</label><input name="Intelligence-save" placeholder="+0" type="text" /><input name="Intelligence-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Charisma-save">Charisma</label><input name="Charisma-save" placeholder="+0" type="text" /><input name="Charisma-save-prof" type="checkbox" />
+              </li>
+            </ul>
+            <div class="label">
+              Saving Throws
+            </div>
+          </div>
+          <div class="skills list-section box">
+            <ul>
+              <li>
+                <label for="Acrobatics">Acrobatics <span class="skill">(Dex)</span></label><input name="Acrobatics" placeholder="+0" type="text" /><input name="Acrobatics-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Animal Handling">Animal Handling <span class="skill">(Wis)</span></label><input name="Animal Handling" placeholder="+0" type="text" /><input name="Animal Handling-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Arcana">Arcana <span class="skill">(Int)</span></label><input name="Arcana" placeholder="+0" type="text" /><input name="Arcana-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Athletics">Athletics <span class="skill">(Str)</span></label><input name="Athletics" placeholder="+0" type="text" /><input name="Athletics-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Deception">Deception <span class="skill">(Cha)</span></label><input name="Deception" placeholder="+0" type="text" /><input name="Deception-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="History">History <span class="skill">(Int)</span></label><input name="History" placeholder="+0" type="text" /><input name="History-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Insight">Insight <span class="skill">(Wis)</span></label><input name="Insight" placeholder="+0" type="text" /><input name="Insight-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Intimidation">Intimidation <span class="skill">(Cha)</span></label><input name="Intimidation" placeholder="+0" type="text" /><input name="Intimidation-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Investigation">Investigation <span class="skill">(Int)</span></label><input name="Investigation" placeholder="+0" type="text" /><input name="Investigation-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Medicine">Medicine <span class="skill">(Wis)</span></label><input name="Medicine" placeholder="+0" type="text" /><input name="Medicine-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Nature">Nature <span class="skill">(Int)</span></label><input name="Nature" placeholder="+0" type="text" /><input name="Nature-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Perception">Perception <span class="skill">(Wis)</span></label><input name="Perception" placeholder="+0" type="text" /><input name="Perception-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Performance">Performance <span class="skill">(Cha)</span></label><input name="Performance" placeholder="+0" type="text" /><input name="Performance-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Persuasion">Persuasion <span class="skill">(Cha)</span></label><input name="Persuasion" placeholder="+0" type="text" /><input name="Persuasion-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Religion">Religion <span class="skill">(Int)</span></label><input name="Religion" placeholder="+0" type="text" /><input name="Religion-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Sleight of Hand">Sleight of Hand <span class="skill">(Dex)</span></label><input name="Sleight of Hand" placeholder="+0" type="text" /><input name="Sleight of Hand-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Stealth">Stealth <span class="skill">(Dex)</span></label><input name="Stealth" placeholder="+0" type="text" /><input name="Stealth-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Survival">Survival <span class="skill">(Wis)</span></label><input name="Survival" placeholder="+0" type="text" /><input name="Survival-prof" type="checkbox" />
+              </li>
+            </ul>
+            <div class="label">
+              Skills
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="passive-perception box">
+        <div class="label-container">
+          <label for="passiveperception">Passive Wisdom (Perception)</label>
+        </div>
+        <input name="passiveperception" placeholder="10" />
+      </div>
+      <div class="otherprofs box textblock">
+        <label for="otherprofs">Other Proficiencies and Languages</label><textarea name="otherprofs"></textarea>
+      </div>
+    </section>
+    <section>
+      <section class="combat">
+        <div class="armorclass">
+          <div>
+            <label for="ac">Armor Class</label><input name="ac" placeholder="10" type="text" />
+          </div>
+        </div>
+        <div class="initiative">
+          <div>
+            <label for="initiative">Initiative</label><input name="initiative" placeholder="+0" type="text" />
+          </div>
+        </div>
+        <div class="speed">
+          <div>
+            <label for="speed">Speed</label><input name="speed" placeholder="30" type="text" />
+          </div>
+        </div>
+        <div class="hp">
+          <div class="regular">
+            <div class="max">
+              <label for="maxhp">Hit Point Maximum</label><input name="maxhp" placeholder="10" type="text" />
+            </div>
+            <div class="current">
+              <label for="currenthp">Current Hit Points</label><input name="currenthp" type="text" />
+            </div>
+          </div>
+          <div class="temporary">
+            <label for="temphp">Temporary Hit Points</label><input name="temphp" type="text" />
+          </div>
+        </div>
+        <div class="hitdice">
+          <div>
+            <div class="total">
+              <label onclick="totalhd_clicked()" for="totalhd">Total</label><input name="totalhd" placeholder="2d10" type="text" />
+            </div>
+            <div class="remaining">
+              <label for="remaininghd">Hit Dice</label><input name="remaininghd" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="deathsaves">
+          <div>
+            <div class="label">
+              <label>Death Saves</label>
+            </div>
+            <div class="marks">
+              <div class="deathsuccesses">
+                <label>Successes</label>
+                <div class="bubbles">
+                  <input name="deathsuccess1" type="checkbox" />
+                  <input name="deathsuccess2" type="checkbox" />
+                  <input name="deathsuccess3" type="checkbox" />
+                </div>
+              </div>
+              <div class="deathfails">
+                <label>Failures</label>
+                <div class="bubbles">
+                  <input name="deathfail1" type="checkbox" />
+                  <input name="deathfail2" type="checkbox" />
+                  <input name="deathfail3" type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="attacksandspellcasting">
+        <div>
+          <label>Attacks & Spellcasting</label>
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Atk Bonus
+                </th>
+                <th>
+                  Damage/Type
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input name="atkname1" type="text" />
+                </td>
+                <td>
+                  <input name="atkbonus1" type="text" />
+                </td>
+                <td>
+                  <input name="atkdamage1" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input name="atkname2" type="text" />
+                </td>
+                <td>
+                  <input name="atkbonus2" type="text" />
+                </td>
+                <td>
+                  <input name="atkdamage2" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input name="atkname3" type="text" />
+                </td>
+                <td>
+                  <input name="atkbonus3" type="text" />
+                </td>
+                <td>
+                  <input name="atkdamage3" type="text" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <textarea></textarea>
+        </div>
+      </section>
+      <section class="equipment">
+        <div>
+          <label>Equipment</label>
+          <div class="money">
+            <ul>
+              <li>
+                <label for="cp">cp</label><input name="cp" />
+              </li>
+              <li>
+                <label for="sp">sp</label><input name="sp" />
+              </li>
+              <li>
+                <label for="ep">ep</label><input name="ep" />
+              </li>
+              <li>
+                <label for="gp">gp</label><input name="gp" />
+              </li>
+              <li>
+                <label for="pp">pp</label><input name="pp" />
+              </li>
+            </ul>
+          </div>
+          <textarea placeholder="Equipment list here"></textarea>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="flavor">
+        <div class="personality">
+          <label for="personality">Personality</label><textarea name="personality"></textarea>
+        </div>
+        <div class="ideals">
+          <label for="ideals">Ideals</label><textarea name="ideals"></textarea>
+        </div>
+        <div class="bonds">
+          <label for="bonds">Bonds</label><textarea name="bonds"></textarea>
+        </div>
+        <div class="flaws">
+          <label for="flaws">Flaws</label><textarea name="flaws"></textarea>
+        </div>
+      </section>
+      <section class="features">
+        <div>
+          <label for="features">Features & Traits</label><textarea name="features"></textarea>
+        </div>
+      </section>
+    </section>
+  </main>
+</form>
+IP of Lance West
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy System D&D Character Generator</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Legacy System Character Development Questionnaire</h2>
+
+    </head> 
+<div class="top">
+	<button id="reset" onclick="reset()">Reset</button> 
+
+	<select id="selLevel">
+	<option value="1">1st level</option>
+	<option value="2">2nd level</option>
+	<option value="3">3rd level</option>
+	<option value="4">4th level</option>
+	<option value="5">5th level</option>
+	<option value="6">6th level</option>
+	<option value="7">7th level</option>
+	<option value="8">8th level</option>
+	<option value="9">9th level</option>
+	<option value="10">10th level</option>
+	<option value="21">Level 1-4</option>
+	<option value="22">Level 5-10</option>
+<!--	<option value="23">Level 8-12<option>
+	<option value="24">Level 12-16</option>
+	<option value="25">Level 17-20</option> 
+	<option value="11">11th level</option>
+	<option value="12">12th level</option>
+	<option value="13">13th level</option>
+	<option value="14">14th level</option>
+	<option value="15">15th level</option>
+	<option value="16">16th level</option>
+	<option value="17">17th level</option>
+	<option value="18">18th level</option>
+	<option value="19">19th level</option>
+	<option value="20">20th level</option>
+
+-->
+	<option value="0">Level 1-10</option>
+
+	</select> 
+
+	<select id="selGender"><option value="0">Any Gender</option>
+	<option value="1">Male</option>
+	<option value="2">Female</option>
+	</select>
+
+	<select id="selRace"><option value="0">Any Race</option>
+	<option value="21">Aarakocra</option>	
+	<option value="1">Dragonborn</option>
+	<option value="11">Dwarf (Hill)</option>
+	<option value="12">Dwarf (Mountain)</option>
+	<option value="6">Elf (Drow)</option>
+	<option value="14">Elf (High)</option>
+	<option value="15">Elf (Wood)</option>
+	<option value="23">Genasi (Air)</option>
+	<option value="24">Genasi (Earth)</option>
+	<option value="25">Genasi (Fire)</option>
+	<option value="26">Genasi (Water)</option>
+	<option value="2">Gnome (Forest)</option>
+	<option value="7">Gnome (Rock)</option>
+	<option value="22">Gnome (Svirfneblin)</option>
+	<option value="27">Goliath</option>
+	<option value="3">Half-Elf</option>
+	<option value="4">Half-Orc</option>
+	<option value="17">Halfling (Lightfoot)</option>
+	<option value="16">Halfling (Stout)</option>
+	<option value="13">Human</option>
+	<option value="5">Tiefling</option>
+	</select>
+
+	 
+	<select id="selClass" onchange="selectClass()"><option value="0">Any Class</option>
+	<option value="1">Barbarian</option>
+	<option value="2">Bard</option>
+	<option value="3">Cleric</option>
+	<option value="4">Druid</option>
+	<option value="5">Fighter (Eldritch Knight)</option>
+	<option value="6">Fighter (High Dexterity)</option>
+	<option value="7">Fighter (High Strength)</option>
+	<option value="8">Monk</option>
+	<option value="9">Paladin</option>
+	<option value="10">Ranger</option>
+	<option value="11">Rogue (Thief or Assassin)</option>
+	<option value="12">Rogue (Arcane Trickster)</option>
+	<option value="13">Sorcerer</option>
+	<option value="14">Warlock</option>
+	<option value="15">Wizard</option>
+	</select>
+
+	<span id="clericOptions" class="classOptions">
+		<select id="selCleric"><option value="-1">Any Cleric Domain</option>
+		<option value="0">Knowledge</option>
+		<option value="1">Life</option>
+		<option value="2">Light</option>
+		<option value="3">Nature</option>
+		<option value="4">Tempest</option>
+		<option value="5">Trickery</option>
+		<option value="6">War</option>
+		<option value="7">Death</option>
+		</select>
+	</span>
+
+	<span id="wizardOptions" class="classOptions">
+		<select id="selWizard"><option value="-1">Any Wizard School</option>
+		<option value="0">Abjuration</option>
+		<option value="1">Conjuration</option>
+		<option value="2">Divination</option>
+		<option value="3">Enchantment</option>
+		<option value="4">Evocation</option>
+		<option value="5">Illusion</option>
+		<option value="6">Necromancy</option>
+		<option value="7">Transmutation</option>
+		</select>
+	</span>
+
+
+	<span id="druidOptions" class="classOptions">
+		<select id="selDruid"><option value="-1">Any Druid Circle</option>
+		<option value="0">Circle of the Moon</option>
+		<option value="1">Circle of Land - Arctic</option>
+		<option value="2">Circle of Land - Coast</option>
+		<option value="3">Circle of Land - Desert</option>
+		<option value="4">Circle of Land - Forest</option>
+		<option value="5">Circle of Land - Grassland</option>
+		<option value="6">Circle of Land - Mountain</option>
+		<option value="7">Circle of Land - Swamp</option>
+		<option value="8">Circle of Land - Underdark</option>
+		</select>
+	</span>
+
+	<span id="barbarianOptions" class="classOptions">
+		<select id="selBarbarian"><option value="-1">Any Barbarian Path</option>
+		<option value="0">Path of the Berserker</option>
+		<option value="1">Path of the Totem Warrior (any)</option>
+		<option value="2">Path of the Totem Warrior (Bear)</option>
+		<option value="3">Path of the Totem Warrior (Eagle)</option>
+		<option value="4">Path of the Totem Warrior (Wolf)</option>
+		</select>
+	</span>
+	<span id="bardOptions" class="classOptions">
+		<select id="selBard"><option value="-1">Any Bard College</option>
+		<option value="0">College of Lore</option>
+		<option value="1">College of Valor</option>
+		</select>
+	</span>
+
+	<span id="fighterOptions" class="classOptions">
+		<select id="selFighter"><option value="-1">Any Fighter Archetype</option>
+		<option value="0">Champion</option>
+		<option value="1">Battle Master</option>
+		</select>
+	</span>
+	<span id="monkOptions" class="classOptions">
+		<select id="selMonk"><option value="-1">Any Monastic Tradition</option>
+		<option value="0">Way of the Open Hand</option>
+		<option value="1">Way of Shadow</option>
+		<option value="2">Way of the Four Elements</option>
+		</select>
+	</span>
+	<span id="paladinOptions" class="classOptions">
+		<select id="selPaladin"><option value="-1">Any Sacred Oath</option>
+		<option value="0">Oath of Devotion</option>
+		<option value="1">Oath of the Ancients</option>
+		<option value="2">Oath of Vengeance</option>
+		
+		</select>
+	</span>
+	<span id="rangerOptions" class="classOptions">
+		<select id="selRanger"><option value="-1">Any Ranger Archetype</option>
+		<option value="0">Hunter</option>
+		<option value="1">Beast Master</option>
+		</select>
+	</span>
+	<span id="rogueOptions" class="classOptions">
+		<select id="selRogue"><option value="-1">Any Rogue Archetype</option>
+		<option value="0">Thief</option>
+		<option value="1">Assassin</option>
+		</select>
+	</span>
+	<span id="sorcererOptions" class="classOptions">
+		<select id="selSorcerer"><option value="-1">Any Sorcerous Origin</option>
+		<option value="0">Draconic Bloodline</option>
+		<option value="1">Wild Magic</option>
+		</select>
+	</span>
+	<span id="warlockOptions" class="classOptions">
+		<select id="selWarlock"><option value="-1">Any Patron</option>
+		<option value="0">The Archfey</option>
+		<option value="1">The Fiend</option>
+		<option value="2">The Great Old One</option>
+		</select>
+
+		<select id="selWarlockPact"><option value="-1">Any Pact Boon</option>
+		<option value="0">Pact of the Chain</option>
+		<option value="1">Pact of the Blade</option>
+		<option value="2">Pact of the Tome</option>
+		
+		</select>
+	</span>
+
+
+
+
+
+
+
+
+	
+	<select id="selBg"><option value="0">Any Background</option>
+	<option value="1">Acolyte</option>
+	<option value="2">Charlatan</option>
+	<option value="3">Criminal</option>
+	<option value="4">Entertainer</option>
+	<option value="7">Folk Hero</option>
+	<option value="5">Guild Artisan</option>
+	<option value="6">Hermit</option>
+	<option value="8">Noble</option>
+	<option value="9">Outlander</option>
+	<option value="10">Sage</option>
+	<option value="11">Sailor</option>
+	<option value="12">Soldier</option>
+	<option value="13">Urchin</option>
+	</select>
+</div>
+
+<br>
+
+<div class="container">
+    <h3>Legacy System Questionnaire</h3>
+
+    
+    <div id="questionnaire">
+        <form id="char-form">
+            <h2>Power & Purpose</h2>
+            <label>A battle looms, and the war council looks to you for guidance. How do you respond?</label>
+            <select id="leadership">
+                <option value="1">Take full control</option>
+                <option value="2">Take a leading role</option>
+                <option value="3">Openly speak my opinion</option>
+                <option value="4">Share my views during open discussion</option>
+                <option value="5">Encourage others to speak up</option>
+                <option value="6">Act on behalf of those who cannot act for themselves</option>
+            </select>
+
+            <label>The village’s food stores are running low, and the people are hungry. How do you handle the remaining supplies?</label>
+            <select id="resource">
+                <option value="1">Secure for self</option>
+                <option value="2">Lean towards securing for self</option>
+                <option value="3">Take more than my share</option>
+                <option value="4">Take only my share</option>
+                <option value="5">Lean towards even distribution</option>
+                <option value="6">Distribute everything evenly</option>
+            </select>
+
+            <label>A mysterious map promises great fortune—but also great danger. Do you take the risk?</label>
+            <select id="risk">
+                <option value="1">Take risks for greater power</option>
+                <option value="2">Leans toward risk-taking</option>
+                <option value="3">Takes 'safe' risks</option>
+                <option value="4">Doesn't willingly take risks</option>
+                <option value="5">Is overly cautious</option>
+                <option value="6">Completely avoid risk</option>
+            </select>
+<br><br>
+            <h2>Wisdom & Adaptation</h2>
+            <label>The enemy strikes unexpectedly, and there’s no time to plan. How do you decide your next move?</label>
+            <select id="decision">
+                <option value="1">Rely fully on past experience</option>
+                <option value="2">Trust proven strategies</option>
+                <option value="3">Weigh both experience and innovation</option>
+                <option value="4">Experiment cautiously</option>
+                <option value="5">Try new approaches frequently</option>
+                <option value="6">Rely heavily on new ideas and change</option>
+            </select>
+
+            <label>You enter a land unlike any you’ve seen before, with customs and dangers unknown. How do you navigate the unfamiliar?</label>
+            <select id="uncertainty">
+                <option value="1">Stick with proven methods</option>
+                <option value="2">Lean towards familiar territory</option>
+                <option value="3">Choose stability with some flexibility</option>
+                <option value="4">Try new paths occasionally</option>
+                <option value="5">Embrace change regularly</option>
+                <option value="6">Seek out the unfamiliar and unknown</option>
+            </select>
+
+            <label>Your latest endeavor ends in failure. What lesson do you take from it?</label>
+            <select id="failure">
+                <option value="1">Reflect deeply and gain wisdom</option>
+                <option value="2">Analyze thoroughly before moving forward</option>
+                <option value="3">Balance reflection with adaptation</option>
+                <option value="4">Adapt quickly but learn somewhat</option>
+                <option value="5">Move on without much reflection</option>
+                <option value="6">Avoid reflection entirely, focus on moving forward</option>
+            </select>
+<br><br>
+            <h2>Connection & Impact</h2>
+            <label>A stranger seeks your friendship, offering loyalty in return. What kind of bond do you form?</label>
+            <select id="relationships">
+                <option value="1">Focus fully on deep, lasting bonds</option>
+                <option value="2">Prioritize close, meaningful relationships</option>
+                <option value="3">Balance between deep and broad connections</option>
+                <option value="4">Enjoy broader, social relationships</option>
+                <option value="5">Prefer casual and fleeting interactions</option>
+                <option value="6">Keep most connections distant or surface-level</option>
+            </select>
+
+            <label>The people look to you as a leader, even when you didn’t ask for it. How do you wield your influence?</label>
+            <select id="influence">
+                <option value="1">Actively aim for lasting influence</option>
+                <option value="2">Frequently seek to make an impact</option>
+                <option value="3">Contribute meaningfully when possible</option>
+                <option value="4">Prefer small, quiet contributions</option>
+                <option value="5">Rarely seek to influence others</option>
+                <option value="6">Prefer to remain in the background</option>
+            </select>
+
+            <label>A beggar collapses at your feet, desperate for aid. How do you respond?</label>
+            <select id="compassion">
+                <option value="1">Take immediate action to help</option>
+                <option value="2">Offer consistent support</option>
+                <option value="3">Balance empathy with action</option>
+                <option value="4">Show compassion but avoid involvement</option>
+                <option value="5">Feel sympathy but remain passive</option>
+                <option value="6">Stay distant, feeling unaffected</option>
+            </select>
+<br><br>
+            <h2>Action & Method</h2>
+            <label>A mission must be completed, and time is short. Do you charge in or meticulously plan?</label>
+            <select id="execution">
+                <option value="1">Strictly follow plans and methods</option>
+                <option value="2">Favor structured strategies</option>
+                <option value="3">Balance structure with flexibility</option>
+                <option value="4">Use some planning, but adapt frequently</option>
+                <option value="5">Prefer spontaneous, free-flowing action</option>
+                <option value="6">Act impulsively without much planning</option>
+            </select>
+
+            <label>The king entrusts you with a delicate task requiring both care and speed. Which do you prioritize?</label>
+            <select id="work-ethic">
+                <option value="1">Prioritize thoroughness and precision</option>
+                <option value="2">Focus on detailed, careful execution</option>
+                <option value="3">Balance accuracy and efficiency</option>
+                <option value="4">Aim for efficiency with some attention to detail</option>
+                <option value="5">Prioritize speed over precision</option>
+                <option value="6">Rush to completion, sacrificing accuracy</option>
+            </select>
+
+            <label>You stand before an ancient puzzle. Do you solve it methodically or break it open?</label>
+            <select id="efficiency">
+                <option value="1">Prioritize maximum efficiency</option>
+                <option value="2">Lean towards productivity over creativity</option>
+                <option value="3">Balance efficiency and creativity equally</option>
+                <option value="4">Favor creative solutions with some efficiency</option>
+                <option value="5">Lean towards creative exploration</option>
+                <option value="6">Prioritize creativity, even if it reduces efficiency</option>
+            </select>
+<br><br>
+            <h2>Truth & Identity</h2>
+            <label>The ruling order asks you to forsake your beliefs for a place of power. Do you accept?</label>
+            <select id="authenticity">
+                <option value="1">Stay fully authentic, no matter the cost</option>
+                <option value="2">Prioritize authenticity over fitting in</option>
+                <option value="3">Balance authenticity with social adaptation</option>
+                <option value="4">Adapt occasionally but keep core values</option>
+                <option value="5">Fit in regularly, authenticity comes second</option>
+                <option value="6">Frequently mask my true self to belong</option>
+            </select>
+
+            <label>A bard sings of your deeds—but the tale is nothing like the truth. Does it matter?</label>
+            <select id="self-perception">
+                <option value="1">Define myself by my own standards only</option>
+                <option value="2">Rely mostly on personal self-assessment</option>
+                <option value="3">Balance personal view with external feedback</option>
+                <option value="4">Consider others' views but trust my own</option>
+                <option value="5">Heavily influenced by others' opinions</option>
+                <option value="6">Define myself by how others see me</option>
+            </select>
+            <label>Your most sacred values are challenged before a great audience. Do you stand firm or adapt?</label>
+            <select id="values-conflict">
+                <option value="1">Stand fully by my values, regardless of consequence</option>
+                <option value="2">Hold to my values even under pressure</option>
+                <option value="3">Balance values with social acceptance</option>
+                <option value="4">Compromise slightly for social harmony</option>
+                <option value="5">Frequently compromise to avoid conflict</option>
+                <option value="6">Conform completely to fit in</option>
+            </select>
+           <br><br> 
+            <h2>Growth & Balance</h2>
+            <label>A mentor offers to teach you, but it requires abandoning your current path. Do you embrace the change?</label>
+            <select id="personal-growth">
+                <option value="1">Always push for growth and improvement</option>
+                <option value="2">Frequently seek self-betterment</option>
+                <option value="3">Balance growth with stability</option>
+                <option value="4">Welcome growth occasionally</option>
+                <option value="5">Prefer contentment over constant change</option>
+                <option value="6">Value stability and avoid major growth efforts</option>
+            </select>
+
+            <label>The road ahead is long, and your companions wish to rest. Do you push on or take time to recover?</label>
+            <select id="work-balance">
+                <option value="1">Prioritize career advancement fully</option>
+                <option value="2">Favor work-related growth</option>
+                <option value="3">Balance work and personal life equally</option>
+                <option value="4">Lean towards personal well-being</option>
+                <option value="5">Prioritize personal life over work</option>
+                <option value="6">Fully prioritize well-being over career growth</option>
+            </select>
+
+            <label>The world shifts around you, traditions crumble, and new ways arise. How do you react?
+</label>
+            <select id="adaptation">
+                <option value="1">Embrace change fully and eagerly</option>
+                <option value="2">Welcome change with little resistance</option>
+                <option value="3">Balance change with stability</option>
+                <option value="4">Adapt slowly but accept it</option>
+                <option value="5">Resist most changes</option>
+                <option value="6">Reject change to preserve stability</option>
+            </select>
+
+            <br>
+
+    <br><br>
+
+    <label>Choose a Race</label>
+    <select id="race-selection" onchange="displayDnDStats()">
+        <option value="Human">Human</option>
+        <option value="Elf">Elf</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Halfling">Halfling</option>
+        <option value="Orc">Orc</option>
+        <option value="Gnome">Gnome</option>
+        <option value="HalfElf">Half-Elf</option>
+        <option value="Tiefling">Tiefling</option>
+        <option value="Dragonborn">Dragonborn</option>
+        <option value="HalfOrc">Half-Orc</option>
+    </select>
+ <div id="half-elf-bonus" style="display: none;">
+                <label>Choose an additional +1 stat:</label>
+                <select id="half-elf-stat">
+                    <option value="strength">Strength</option>
+                    <option value="dexterity">Dexterity</option>
+                    <option value="constitution">Constitution</option>
+                    <option value="intelligence">Intelligence</option>
+                    <option value="wisdom">Wisdom</option>
+                </select>
+            </div>
+        <h1>Character Creation</h1>
+        <form id="character-form">
+            <div class="form-group">
+                <label for="class">Choose your class:</label>
+                <select id="class" name="class">
+                    <option value="">Select a class</option>
+                    <option value="fighter">Fighter</option>
+                    <option value="wizard">Wizard</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="cleric">Cleric</option>
+                    <option value="barbarian">Barbarian</option>
+                </select>
+           
+        </form>
+    </div>
+
+    <button type="button" onclick="randomFill()">Random Fill</button>
+    <button type="button" onclick="displayDnDStats()">Generate Character</button>
+</div>
+
+<br>
+
+<div id="result">
+    <h2>Character Results</h2>
+    <p id="character-stats"></p>
+    <div id="dnd-stats"></div>
+</div>
+<script>
+// Function to randomly fill the form
+function randomFill() {
+    const selects = document.querySelectorAll("select");
+    selects.forEach(select => {
+        let randomValue = Math.floor(Math.random() * select.options.length);
+        select.selectedIndex = randomValue;
+    });
+
+    const inputs = document.querySelectorAll("input[type='number']");
+    inputs.forEach(input => {
+        input.value = Math.floor(Math.random() * 11);  // Random values between 0 and 10
+    });
+}
+
+// Function to generate D&D stats based on form data
+function displayDnDStats() {
+    // Grab the selected values from the form
+    const leadership = parseInt(document.getElementById('leadership').value);
+    const resource = parseInt(document.getElementById('resource').value);
+    const risk = parseInt(document.getElementById('risk').value);
+    const decision = parseInt(document.getElementById('decision').value);
+    const uncertainty = parseInt(document.getElementById('uncertainty').value);
+    const failure = parseInt(document.getElementById('failure').value);
+    const relationships = parseInt(document.getElementById('relationships').value);
+    const influence = parseInt(document.getElementById('influence').value);
+    const compassion = parseInt(document.getElementById('compassion').value);
+    const execution = parseInt(document.getElementById('execution').value);
+    const workEthic = parseInt(document.getElementById('work-ethic').value);
+    const efficiency = parseInt(document.getElementById('efficiency').value);
+    const authenticity = parseInt(document.getElementById('authenticity').value);
+    const selfPerception = parseInt(document.getElementById('self-perception').value);
+    const valuesConflict = parseInt(document.getElementById('values-conflict').value);
+    const personalGrowth = parseInt(document.getElementById('personal-growth').value);
+    const workLifeBalance = parseInt(document.getElementById('work-balance').value);
+    const adaptation = parseInt(document.getElementById('adaptation').value);
+
+    // Grab selected race
+    const race = document.getElementById('race-selection').value;
+    
+    // Grab selected class
+    const characterClass = document.getElementById('class').value;
+
+    // Assigning values to D&D stats (based on your questionnaire)
+    let strength = calculateStat([leadership, resource, risk]);
+    let dexterity = calculateStat([execution, workEthic, efficiency]);
+    let constitution = calculateStat([personalGrowth, workLifeBalance, adaptation]);
+    let intelligence = calculateStat([decision, uncertainty, failure]);
+    let wisdom = calculateStat([relationships, influence, compassion]);
+    let charisma = calculateStat([authenticity, selfPerception, valuesConflict]);
+
+    // Apply race modifiers
+    switch (race) {
+        case "Human":
+            // Humans get +1 to all stats
+            strength += 1;
+            dexterity += 1;
+            constitution += 1;
+            intelligence += 1;
+            wisdom += 1;
+            charisma += 1;
+            break;
+        case "Elf":
+            dexterity += 2;
+            wisdom += 1;
+            break;
+        case "Dwarf":
+            constitution += 2;
+            wisdom += 1;
+            break;
+        case "Halfling":
+            dexterity += 2;
+            charisma += 1;
+            break;
+        case "Orc":
+            strength += 2;
+            constitution += 1;
+            break;
+        case "Gnome":
+            intelligence += 2;
+            dexterity += 1;
+            break;
+        case "HalfElf":
+            charisma += 2;
+            const halfElfBonusStat = document.getElementById("half-elf-stat").value;
+            if (halfElfBonusStat === "strength") strength += 1;
+            else if (halfElfBonusStat === "dexterity") dexterity += 1;
+            else if (halfElfBonusStat === "constitution") constitution += 1;
+            else if (halfElfBonusStat === "intelligence") intelligence += 1;
+            else if (halfElfBonusStat === "wisdom") wisdom += 1;
+            break;
+            break;
+        case "Tiefling":
+            charisma += 2;
+            intelligence += 1;
+            break;
+        case "Dragonborn":
+            strength += 2;
+            charisma += 1;
+            break;
+        case "HalfOrc":
+            strength += 2;
+            constitution += 1;
+            break;
+    }
+
+    // Apply class modifiers
+    switch (characterClass) {
+        case "fighter":
+            strength += 2; // Fighters are strong!
+            break;
+        case "wizard":
+            intelligence += 2; // Wizards are smart!
+            break;
+        case "rogue":
+            dexterity += 2; // Rogues are dexterous!
+            break;
+        case "cleric":
+            wisdom += 2; // Clerics are wise!
+            break;
+        case "barbarian":
+            constitution += 2; // Barbarians are tough!
+            break;
+    }
+
+    // Display the generated stats
+    const dndStats = `
+        Strength (STR): ${strength}
+        Dexterity (DEX): ${dexterity}
+        Constitution (CON): ${constitution}
+        Intelligence (INT): ${intelligence}
+        Wisdom (WIS): ${wisdom}
+        Charisma (CHA): ${charisma}
+    `;
+
+    document.getElementById('dnd-stats').innerText = dndStats;
+}
+
+
+// Helper function to calculate stats based on form responses
+function calculateStat(values) {
+    // Sum the values and return the total
+    const total = values.reduce((sum, value) => sum + value, 0);
+    return total;  // This now returns the sum.
+}
+
+document.getElementById("class").addEventListener("change", function() {
+    const classSelect = document.getElementById("class");
+    const generateButton = document.getElementById("displayDnDStats");
+    
+    // Enable the "Generate" button when a class is selected
+    if (classSelect.value !== "") {
+        displayDnDStats.disabled = false; // Enable button
+    } else {
+        displayDnDStats.disabled = true; // Disable button if no class is selected
+    }
+});
+
+</script>
+
+</body>
+</html>
