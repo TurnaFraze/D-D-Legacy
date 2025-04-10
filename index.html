@@ -1,9 +1,18 @@
 <form class="charsheet">
   <header>
-    <section class="charname">
-      <label for="charname">Character Name</label><input name="charname" placeholder="Thoradin Fireforge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <section class="window">
+<div class="header">
+      <label for="window">Character Name</label>
+     </div>
+<input name="charname" placeholder="Thoradin Fireforge" />
     </section>
     <section class="misc">
+      <div class="window">
+<div class="header">
+	Information
+		</div>
       <ul>
         <li>
           <label for="classlevel">Class & Level</label><input name="classlevel" placeholder="Paladin 2" />
@@ -29,6 +38,10 @@
   <main>
     <section>
       <section class="attributes">
+       <div class="window">
+	<div class="header">
+		Legacy scores
+</div>
         <div class="scores">
           <ul>
             <li>
@@ -81,6 +94,7 @@
             </li>
           </ul>
         </div>
+</div>
         <div class="attr-applications">
           <div class="inspiration box">
             <div class="label-container">
@@ -94,7 +108,11 @@
             </div>
             <input name="proficiencybonus" placeholder="+2" />
           </div>
+<div class="window">
           <div class="saves list-section box">
+ <div class="header">
+Skills
+</div>
             <ul>
               <li>
                 <label for="Strength-save">Strength</label><input name="Strength-save" placeholder="+0" type="text" /><input name="Strength-save-prof" type="checkbox" />
@@ -115,10 +133,15 @@
                 <label for="Charisma-save">Charisma</label><input name="Charisma-save" placeholder="+0" type="text" /><input name="Charisma-save-prof" type="checkbox" />
               </li>
             </ul>
+	  </div>
+</div>
+<div class="window">
+<div class="header">
             <div class="label">
+</div>
               Saving Throws
             </div>
-          </div>
+<div class="window">
           <div class="skills list-section box">
             <ul>
               <li>
@@ -176,22 +199,25 @@
                 <label for="Survival">Survival <span class="skill">(Wis)</span></label><input name="Survival" placeholder="+0" type="text" /><input name="Survival-prof" type="checkbox" />
               </li>
             </ul>
-            <div class="label">
+</div>
+</div>
+</div>
+<div class="window">
+            <div class="header">
               Skills
-            </div>
-          </div>
         </div>
-      </section>
-      <div class="passive-perception box">
+<div class="window">      
+     <div class="passive-perception box">
         <div class="label-container">
           <label for="passiveperception">Passive Wisdom (Perception)</label>
         </div>
         <input name="passiveperception" placeholder="10" />
-      </div>
+    
       <div class="otherprofs box textblock">
         <label for="otherprofs">Other Proficiencies and Languages</label><textarea name="otherprofs"></textarea>
-      </div>
-    </section>
+    
+    
+<div class="window">
     <section>
       <section class="combat">
         <div class="armorclass">
@@ -227,16 +253,20 @@
             <div class="total">
               <label onclick="totalhd_clicked()" for="totalhd">Total</label><input name="totalhd" placeholder="2d10" type="text" />
             </div>
+</div>
             <div class="remaining">
               <label for="remaininghd">Hit Dice</label><input name="remaininghd" type="text" />
             </div>
           </div>
         </div>
-        <div class="deathsaves">
-          <div>
+<div>
+</section>
+<div class="window">
+     <div class="header">
             <div class="label">
               <label>Death Saves</label>
             </div>
+     </div>
             <div class="marks">
               <div class="deathsuccesses">
                 <label>Successes</label>
@@ -258,9 +288,13 @@
           </div>
         </div>
       </section>
+<div class="window">
+	<div class="header">
       <section class="attacksandspellcasting">
-        <div>
+        
           <label>Attacks & Spellcasting</label>
+</div>
+
           <table>
             <thead>
               <tr>
@@ -313,10 +347,15 @@
           </table>
           <textarea></textarea>
         </div>
-      </section>
+</div>
+</div>
+ </section>
+	<div class="window">
+
       <section class="equipment">
-        <div>
+<div class="header">       
           <label>Equipment</label>
+</div>
           <div class="money">
             <ul>
               <li>
@@ -338,8 +377,14 @@
           </div>
           <textarea placeholder="Equipment list here"></textarea>
         </div>
+</div>
       </section>
     </section>
+</div>
+<div class="window">
+<div class="header">
+Traits
+</div>
     <section>
       <section class="flavor">
         <div class="personality">
@@ -363,21 +408,14 @@
     </section>
   </main>
 </form>
-IP of Lance West
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy System D&D Character Generator</title>
-<link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-
-<div class="container">
+</div>
+Legacy system components are IP of Lance West. The Legacy System™ All rights reserved
+<div class="window">
+<div class="header">
     <h2>Legacy System Character Development Questionnaire</h2>
 
-    </head> 
+    </head>
+</div>
 <div class="top">
 	<button id="reset" onclick="reset()">Reset</button> 
 
@@ -460,7 +498,7 @@ IP of Lance West
 	<option value="14">Warlock</option>
 	<option value="15">Wizard</option>
 	</select>
-
+<br>
 	<span id="clericOptions" class="classOptions">
 		<select id="selCleric"><option value="-1">Any Cleric Domain</option>
 		<option value="0">Knowledge</option>
@@ -511,6 +549,7 @@ IP of Lance West
 		<option value="4">Path of the Totem Warrior (Wolf)</option>
 		</select>
 	</span>
+<br>
 	<span id="bardOptions" class="classOptions">
 		<select id="selBard"><option value="-1">Any Bard College</option>
 		<option value="0">College of Lore</option>
@@ -545,6 +584,7 @@ IP of Lance West
 		<option value="1">Beast Master</option>
 		</select>
 	</span>
+<br>
 	<span id="rogueOptions" class="classOptions">
 		<select id="selRogue"><option value="-1">Any Rogue Archetype</option>
 		<option value="0">Thief</option>
@@ -596,12 +636,14 @@ IP of Lance West
 	<option value="13">Urchin</option>
 	</select>
 </div>
-
+</div>
 <br>
-
+<div class="window">
 <div class="container">
+<div class="window">
+<div class="header">
     <h3>Legacy System Questionnaire</h3>
-
+</div>
     
     <div id="questionnaire">
         <form id="char-form">
@@ -795,7 +837,13 @@ IP of Lance West
 
     <br><br>
 
-    <label>Choose a Race</label>
+    
+</div>
+</div>
+<div class="header">      
+  <h1>Character Creation</h1>
+</div>
+<label>Choose a Race</label>
     <select id="race-selection" onchange="displayDnDStats()">
         <option value="Human">Human</option>
         <option value="Elf">Elf</option>
@@ -818,7 +866,6 @@ IP of Lance West
                     <option value="wisdom">Wisdom</option>
                 </select>
             </div>
-        <h1>Character Creation</h1>
         <form id="character-form">
             <div class="form-group">
                 <label for="class">Choose your class:</label>

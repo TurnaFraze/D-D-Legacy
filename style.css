@@ -1,0 +1,74 @@
+body {
+    font-family: Tahoma, Verdana, Arial, sans-serif; /* Approximating MS Sans Serif */
+    background-color: #c0c0c0; /* Window background */
+    color: #000000; /* Black text */
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    background-color: #ffffff; /* White window area */
+    border: 2px outset #ffffff; /* Raised edge */
+    box-shadow: inset -2px -2px #808080, /* Recessed inner border */
+                inset 2px 2px #ffffff;
+    margin: 20px;
+    padding: 10px;
+}
+
+.header {
+    background-color: #000080; /* Dark blue title bar */
+    color: #ffffff; /* White title text */
+    font-weight: bold;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+}
+
+button, input[type="button"], input[type="submit"] {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color: #e0e0e0;
+    border: 2px outset #ffffff;
+    box-shadow: inset -2px -2px #808080,
+                inset 2px 2px #ffffff;
+    padding: 2px 8px;
+    margin: 2px;
+}
+
+button:active, input[type="button"]:active, input[type="submit"]:active {
+    border: 2px inset #ffffff; /* Pressed effect */
+    box-shadow: inset 2px 2px #808080,
+                inset -2px -2px #ffffff;
+}
+
+input[type="text"], select {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color: #ffffff;
+    border: 1px inset #808080;
+    padding: 2px;
+    margin: 2px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+}
+
+.groupbox {
+    border: 2px groove #808080; /* Groove border */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.groupbox::before {
+    content: attr(data-title); /* Group box title */
+    display: block;
+    position: relative;
+    top: -12px;
+    background-color: #c0c0c0;
+    padding: 0 5px;
+    font-weight: bold;
+}
+input[type="text"] {
+    width: 75%; /* Or any other unit: em, rem, % */
+    /* ... other styles ... */
+}
